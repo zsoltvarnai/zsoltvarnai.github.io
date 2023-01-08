@@ -2,6 +2,7 @@
 <body>
      <script>
          console.log("Start");
+          history.back(2);
         window.addEventListener("load", function() {
   window.parent.postMessage({ message: 'getIframeURL', value: window.location.href }, '*');
     
