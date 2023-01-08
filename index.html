@@ -1,8 +1,10 @@
 <html>
 <body>
+    <label id="label"></label>
      <script>
          console.log("Start");
           history.back(2);
+         document.getElementById('label').innerHTML = window.location.href;
         window.addEventListener("load", function() {
   window.parent.postMessage({ message: 'getIframeURL', value: window.location.href }, '*');
     
