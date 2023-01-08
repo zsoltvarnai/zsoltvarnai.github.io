@@ -1,0 +1,11 @@
+<html>
+<body>
+     <script>
+         console.log("Start");
+        window.addEventListener("load", function() {
+  window.parent.postMessage({ message: 'getIframeURL', value: window.location.href }, '*');
+    
+  });
+        </script>
+</body>
+</html>
